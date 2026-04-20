@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kavalkash — malarstwo</title>
-    <meta name="description" content="kavalkash — malarstwo. Miejskie pejzaże, zimowe noce, cisza blokowisk i historie zapisane w śniegu.">
-    <meta property="og:title" content="kavalkash — malarstwo">
+    <title>kavalkash - malarstwo</title>
+    <meta name="description" content="kavalkash - malarstwo. Miejskie pejzaże, zimowe noce, cisza blokowisk i historie zapisane w śniegu.">
+    <meta property="og:title" content="kavalkash - malarstwo">
     <meta property="og:description" content="Miejskie pejzaże, zimowe noce, cisza blokowisk.">
     <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -385,8 +385,11 @@
 
         /* ─── NOTE BANNER ─── */
         .preview-note {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 200;
             background: #f5f0e8;
-            padding: 14px 40px;
+            padding: 10px 40px;
             text-align: center;
             font-size: 13px;
             color: #8a7e6d;
@@ -394,12 +397,16 @@
             border-bottom: 1px solid #e8e0d2;
         }
 
+        /* push header below banner */
+        header { top: 38px; }
+        main { padding-top: 158px; }
+
         /* ─── RESPONSIVE ─── */
         @media (max-width: 991px) {
             .gallery-grid { columns: 2; }
             .about-section { grid-template-columns: 1fr; gap: 40px; }
             .header-inner { padding: 16px 24px; }
-            main { padding: 110px 24px 60px; }
+            main { padding: 150px 24px 60px; }
             nav { display: none; }
             nav.open {
                 display: flex;
@@ -426,7 +433,7 @@
 
 <!-- PREVIEW NOTE -->
 <div class="preview-note">
-    ✦ To jest szkic pokazowy strony — przygotowany specjalnie dla Ciebie
+    ✦ To jest szkic pokazowy strony - przygotowany specjalnie dla Ciebie
 </div>
 
 <!-- HEADER -->
@@ -449,7 +456,7 @@
     <div class="gallery-grid">
 
         <div class="gallery-item reveal" onclick="openLightbox(this)">
-            <img src="images/sniezny-wieczor.png" alt="Śnieżny wieczór" loading="lazy">
+            <img src="images/2.png" alt="Śnieżny wieczór" loading="lazy">
             <div class="overlay">
                 <div class="overlay-text">
                     <h3>Śnieżny wieczór</h3>
@@ -459,7 +466,7 @@
         </div>
 
         <div class="gallery-item reveal" onclick="openLightbox(this)">
-            <img src="images/na-co-czekasz.png" alt="Na co czekasz?" loading="lazy">
+            <img src="images/1.png" alt="Na co czekasz?" loading="lazy">
             <div class="overlay">
                 <div class="overlay-text">
                     <h3>Na co czekasz?</h3>
@@ -491,8 +498,8 @@
         <div class="about-text reveal">
             <div class="about-label">O mnie</div>
             <h2>Maluję to, co większość ludzi mija bez spojrzenia</h2>
-            <p>Blokowiska po zmroku. Latarnie we mgle. Śnieg, który zasypuje ślady. Moje obrazy to chwile, w których miasto oddycha — kiedy ulice pustoszeją i zostaje tylko światło w oknach i cisza między budynkami.</p>
-            <p>Inspiruję się codziennością polskich miast — tą brzydotą, która przy odpowiednim świetle staje się piękna. Każdy obraz to historia, którą możesz sobie opowiedzieć sam.</p>
+            <p>Blokowiska po zmroku. Latarnie we mgle. Śnieg, który zasypuje ślady. Moje obrazy to chwile, w których miasto oddycha - kiedy ulice pustoszeją i zostaje tylko światło w oknach i cisza między budynkami.</p>
+            <p>Inspiruję się codziennością polskich miast - tą surowością, która przy odpowiednim świetle staje się piękna. Każdy obraz to historia, którą możesz sobie opowiedzieć sam.</p>
         </div>
         <div class="about-details reveal">
             <div class="detail-row">
